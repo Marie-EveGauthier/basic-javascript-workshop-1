@@ -171,3 +171,19 @@ function unique (arr1, arr2) {
 }
 
 console.log(unique([2,3,4,4], [3,4,5]));
+
+/* A function that takes an array and a function as arguments. 
+This function should return a new array that maps every element of the input array by passing it through the function you received.
+*/
+
+function arrMapdByFunction (arr, foo) {
+    var mapArray = [];
+    arr.forEach(function(element){
+        mapArray.push(foo(element));
+    });
+    return mapArray;
+}
+
+console.log(arrMapdByFunction([1,2,3], function(el){
+    return el + 2;
+}));
