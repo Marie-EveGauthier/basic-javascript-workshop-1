@@ -134,3 +134,14 @@ function maxInArray (arr) {
     return Math.max.apply(Math, arr);
 }
 console.log(maxInArray([3, 4, 5, 6, 7]));
+
+//A function that takes an array, and returns a filtered array with only truthy values
+function truthyValues (arr) {
+    var filteredArr = arr.filter(function(element){
+        if(element){
+            return element;
+        }
+    });
+    return filteredArr;
+}
+console.log(truthyValues([0,1]));
