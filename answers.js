@@ -14,3 +14,10 @@ function lastCharacter(str) {
 }
 
 console.log(lastCharacter("hello"));
+
+//A function that takes a string and a number, and returns the character at the position represented by the number.
+function numTellsTheIndex (str, num) {
+    return str.charAt(num);
+}
+
+console.log(numTellsTheIndex("hello", 2));
