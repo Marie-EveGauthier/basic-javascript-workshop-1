@@ -156,3 +156,18 @@ function sumOfTheArray (arr) {
 }
 console.log(sumOfTheArray([2,3,4,5]));
 
+//A function that takes two arrays, and returns an array of all elements that are only in one array.
+function unique (arr1, arr2) {
+    var unique = arr1.filter(function(element) {
+        if (arr2.indexOf(element) === -1)
+        return element;
+    });
+    arr2.forEach(function(element){
+        if (arr1.indexOf(element) === -1)
+        return unique.push(element);
+    });
+    
+    return unique;
+}
+
+console.log(unique([2,3,4,4], [3,4,5]));
