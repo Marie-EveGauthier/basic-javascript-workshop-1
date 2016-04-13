@@ -41,3 +41,27 @@ function multiply (num1, num2) {
 console.log(multiply(2, 3));
 //If you pass something other than a number to your function, it will print NaN
 console.log(multiply("ab", "cd"));
+
+//A function that takes two numbers and a string.  The string tells which mathematical operation to execute on the two numbers
+function stringIsTheOperation (num1, num2, str) {
+    switch (str) {
+        case "add":
+            return num1 + num2;
+        case "subtract":
+            return num1 - num2;
+        case "mult":
+            return num1 * num2;
+        case "div":
+            return num1 / num2;
+        default:
+            return 0;
+    }
+}
+
+console.log(stringIsTheOperation(3, 4, "add"));
+console.log(stringIsTheOperation(3, 4, "subtract"));
+console.log(stringIsTheOperation(3, 4, "mult"));
+console.log(stringIsTheOperation(3, 4, "div"));
+console.log(stringIsTheOperation(3, 4, "addition"));
+
+
