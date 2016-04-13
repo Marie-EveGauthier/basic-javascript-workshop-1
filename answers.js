@@ -21,3 +21,16 @@ function numTellsTheIndex (str, num) {
 }
 
 console.log(numTellsTheIndex("hello", 2));
+
+
+//A function that takes two numbers and adds them together
+function add (num1, num2) {
+    return num1 + num2;
+}
+
+console.log(add(3, 4));
+//If you pass a string or an array instead of a number to your function, they will be concatened
+console.log(add("ab", "cd"));
+console.log(add([2,3,4], 5));
+
+
