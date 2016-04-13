@@ -104,5 +104,18 @@ console.log(factorial(4));
 console.log(factorial(0));
 console.log(factorial(-10));
 
+// A function that takes a phrase as a string, and returns the longest word in that phrase.
+function longestWord(str) {
+    var eachWord = str.split(" ");
+    console.log(eachWord);
+    var longest = 0;
+    for (var i = 0; i < eachWord.length; i++) {
+        if(eachWord[i].length > longest) {
+            longest = eachWord[i];
+        }
+    }
+    return longest;
+}
+console.log(longestWord("JavaScript est un langage merveilleux."));
 
 
