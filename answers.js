@@ -33,4 +33,11 @@ console.log(add(3, 4));
 console.log(add("ab", "cd"));
 console.log(add([2,3,4], 5));
 
+//A function that takes two numbers and multiplies them together
+function multiply (num1, num2) {
+    return num1 * num2;
+}
 
+console.log(multiply(2, 3));
+//If you pass something other than a number to your function, it will print NaN
+console.log(multiply("ab", "cd"));
