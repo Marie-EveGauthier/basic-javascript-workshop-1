@@ -107,7 +107,6 @@ console.log(factorial(-10));
 // A function that takes a phrase as a string, and returns the longest word in that phrase.
 function longestWord(str) {
     var eachWord = str.split(" ");
-    console.log(eachWord);
     var longest = 0;
     for (var i = 0; i < eachWord.length; i++) {
         if(eachWord[i].length > longest) {
@@ -118,4 +117,14 @@ function longestWord(str) {
 }
 console.log(longestWord("JavaScript est un langage merveilleux."));
 
+//A function that takes a phrase, and returns the same phrase with every word capitalized
+function eachWordCapitalized (str) {
+    var allLowerCase = str.toLowerCase().split(" ");
+    var firstCapitalized = allLowerCase.map(function(word) {
+        return word.replace(word[0], word[0].toUpperCase());
+    });    
+    return firstCapitalized.join(" ");
+}
+                                            
 
+console.log(eachWordCapitalized("JavaScript est un langage merveilleux."));
