@@ -64,4 +64,17 @@ console.log(stringIsTheOperation(3, 4, "mult"));
 console.log(stringIsTheOperation(3, 4, "div"));
 console.log(stringIsTheOperation(3, 4, "addition"));
 
+//A function that takes a string and a number, and returns the string repeated that many number of times
+function stringRepeated (str, num) {
+    var result = ""
+    while (num > 0) {
+        result += str
+        num --
+    }
+    return result;
+}
+
+console.log(stringRepeated("hello", 5));
+console.log(stringRepeated("", 5));
+console.log(stringRepeated("hello", 0));
 
