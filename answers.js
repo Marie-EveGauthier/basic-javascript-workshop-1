@@ -144,4 +144,15 @@ function truthyValues (arr) {
     });
     return filteredArr;
 }
-console.log(truthyValues([0,1]));
+console.log(truthyValues([0,1, false, "false"]));
+
+//A function that takes an array of numbers, and returns the sum of all the numbers in the array.
+function sumOfTheArray (arr) {
+    var result = 0;
+    for (var i = 0; i < arr.length; i++) {
+        result += arr[i];
+    }
+    return result;
+}
+console.log(sumOfTheArray([2,3,4,5]));
+
