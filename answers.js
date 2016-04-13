@@ -78,3 +78,12 @@ console.log(stringRepeated("hello", 5));
 console.log(stringRepeated("", 5));
 console.log(stringRepeated("hello", 0));
 
+//A function that takes a string, and returns the reverse of that string
+function stringReversed (str) {
+    return str.split("").reverse().join("");
+}
+
+console.log(stringReversed("hello"));
+console.log(stringReversed(""));
+console.log(stringReversed("MaRie"));
+
