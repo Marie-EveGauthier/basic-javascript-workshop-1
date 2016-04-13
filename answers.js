@@ -128,3 +128,9 @@ function eachWordCapitalized (str) {
                                             
 
 console.log(eachWordCapitalized("JavaScript est un langage merveilleux."));
+
+//A function that takes an array and returns the largest number of the array
+function maxInArray (arr) {
+    return Math.max.apply(Math, arr);
+}
+console.log(maxInArray([3, 4, 5, 6, 7]));
