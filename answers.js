@@ -87,3 +87,22 @@ console.log(stringReversed("hello"));
 console.log(stringReversed(""));
 console.log(stringReversed("MaRie"));
 
+//A function that takes a number and returns the factorial of a number. In case of negative numbers, it doesn't work... it returns the number
+function factorial (num) {
+    if(num === 0 || num === 1){
+        return 1;
+    }
+    else {
+        for (var i = num - 1; i > 0; i--){
+            num *= i;
+        }
+        return num;
+    }
+}
+
+console.log(factorial(4));
+console.log(factorial(0));
+console.log(factorial(-10));
+
+
+
